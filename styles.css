@@ -1,0 +1,160 @@
+.main_wrapper {
+    background : rgba(42, 46, 65, 0.7);
+    width      : 800px;
+    height     : 1795px;
+    margin     : 0;
+    padding    : 0;
+    font-family: Roboto, serif;
+}
+
+
+
+body {
+    margin        : 0;
+    display       : flex;
+    flex-direction: column;
+    flex          : 1 0 auto;
+    margin-right  : 102px;
+    margin-left   : 99px;
+
+}
+
+.navigation {
+    color          : #FFFFFF;
+    display        : flex;
+    justify-content: space-around;
+    min-height     : 212px;
+    align-items    : center;
+    flex-basis     : 800px;
+}
+
+#current_month_date {
+    flex-basis : 320;
+    font-size  : 36px;
+    line-height: 42px;
+}
+
+
+
+button[class*="navigation_button"] {
+    color           : #FFFFFF;
+    border          : none;
+    font-size       : 36px;
+    background-color: transparent;
+    flex-basis      : 18;
+}
+
+
+.line_separator_wrapper {
+    flex-basis     : 599px;
+    justify-content: center;
+    margin-right   : 102px;
+    margin-left    : 99px;
+    flex-wrap      : wrap;
+    margin-bottom  : 97px;
+}
+
+hr {
+
+    border       : 0;
+    /* reset the default stylesheet */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.17);
+    border-top   : 2px solid rgba(0, 0, 0, 0.17);
+
+}
+
+ul {
+    list-style     : none;
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    margin         : 0 100px 0 100px;
+    flex-basis     : 600px;
+    text-align     : center;
+    padding        : 0;
+}
+
+li {
+    font-size  : 26px;
+    line-height: 31px;
+    flex-basis : 86;
+    flex       : 1;
+}
+
+.days_of_week ul li {
+    margin-bottom: 92px;
+    color        : rgba(255, 255, 255, 0.6);
+
+}
+
+li[class*="inactive"] {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+li[class*="selected"] {
+    background-image   : url(images/oval.svg);
+    background-position: center;
+    background-repeat  : no-repeat;
+} 
+
+
+
+.days_of_month>ul {
+
+    flex-wrap      : wrap;
+    justify-content: space-around;
+}
+
+.days_of_month>ul li {
+    flex         : 1 0 14.28%;
+    margin-bottom: 96px;
+}
+
+.categories {
+    color : #FFFFFF;
+    margin: 0 102px 0 99px;
+}
+
+.categories_title {
+    display        : flex;
+    justify-content: start;
+    font-size      : 26px;
+    line-height    : 30px;
+}
+
+.categories_buttons {
+    display        : flex;
+    justify-content: space-between;
+    flex-wrap      : wrap;
+    flex           : 1 1 49%;
+    font-size      : 22px;
+    line-height    : 26px;
+
+
+}
+
+.categories_buttons button {
+    flex-basis   : 285px;
+    height       : 80px;
+    margin-bottom: 30px;
+    font-size    : 22px;
+    line-height  : 26px;
+    text-align   : center;
+    border       : none;
+    border-radius: 12px;
+    color        : #FFFFFF;
+}
+
+
+button[class*="purple"] {
+    background-color: #8576ED;
+
+}
+
+button[class*="orange"] {
+    background-color: #F39946;
+}
+
+button[class*="pink"] {
+    background-color: #FF467E;
+}

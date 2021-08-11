@@ -1,11 +1,11 @@
 body {
-       width      : 800px;
-       height     : 1795px;
-       font-family: Roboto, serif;
+    width      : 800px;
+    height     : 1795px;
+    font-family: Roboto, serif;
 }
 
 .main_wrapper {
-    height: inherit;
+    height       : inherit;
     padding-right: 102px;
     padding-left : 99px;
     background   : rgba(42, 46, 65, 0.7);
@@ -36,6 +36,11 @@ button[class*="navigation_button"] {
     flex            : 0 0 18;
 }
 
+button[class*="navigation_button"] a:hover {
+    color: cyan;
+
+}
+
 .line_separator_wrapper {
     display        : flex;
     justify-content: space-around;
@@ -49,12 +54,12 @@ button[class*="navigation_button"] {
 }
 
 ul {
-    list-style        : none;
-    display           : flex;
-    flex-direction    : row;
-    justify-content   : center;
-    text-align        : center;
-    padding           : 0;
+    list-style     : none;
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    text-align     : center;
+    padding        : 0;
 }
 
 li {
@@ -62,7 +67,7 @@ li {
     line-height: 31px;
     flex-basis : 86;
     flex       : 1;
-    color: #FFFFFF;
+    color      : #FFFFFF;
 }
 
 .days_of_week ul li {
@@ -74,11 +79,13 @@ li[class*="inactive"] {
     color: rgba(255, 255, 255, 0.6);
 }
 
-li[class*="selected"] {
+
+.days_of_month li:hover {
     background-image   : url(images/oval.svg);
     background-position: center;
     background-repeat  : no-repeat;
 }
+
 
 .days_of_month>ul {
     flex-wrap      : wrap;
@@ -93,7 +100,7 @@ li[class*="selected"] {
 }
 
 .categories {
-    color : #FFFFFF;
+    color     : #FFFFFF;
     margin-top: 81px;
 }
 
